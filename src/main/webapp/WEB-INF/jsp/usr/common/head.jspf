@@ -31,6 +31,7 @@
 	<header>
     <div class="flex h-20 container mx-auto">
       <a href="/" class="flex items-center px-3">
+      	<h1>demo > front</h1>
         <span>로고!!!!!!!!!!</span>
       </a>
       

@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class UsrHomeController {
 	@RequestMapping("/usr/home/main")
 	public String showMain() {
+		System.out.println("demo2 > back");
+		System.out.println("back 테스트");
 		return "usr/home/main";
 	}
 	
