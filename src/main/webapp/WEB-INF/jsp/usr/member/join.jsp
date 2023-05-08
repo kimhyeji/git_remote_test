@@ -102,8 +102,11 @@
 			return;
 		}
 		
+<<<<<<< HEAD
 		$('.loginId-msg').html('<div class="mt-2">체크중...</div>');
 		
+=======
+>>>>>>> 25732969e2907cb7f534cd9297dd22c322facbcf
 		$.get('../member/getLoginIdDup', {
 			isAjax : 'Y',
 			loginId : form.loginId.value
@@ -111,6 +114,7 @@
 			var $message  = $(form.loginId).next();
 			
 			if ( data.resultCode.substr(0, 2) == "S-") {
+<<<<<<< HEAD
 				$message.empty().append('<div class="mt-2 text-green-500">' + data.msg + '</div>')
 				validLoginId = data.data1;
 			} else {
@@ -118,6 +122,19 @@
 				validLoginId = '';
 			}
 			
+=======
+				$message.empty().append('<div class="mt-2 text-green-500">' + data.msg + '</div>');
+				validLoginId = data.data1;
+			} else {
+				$message.empty().append('<div class="mt-2 text-red-500">' + data.msg + '</div>');
+				validLoginId = '';
+			}
+			
+			if ( loginId == 0 ) {
+				$message.empty();
+			}
+						
+>>>>>>> 25732969e2907cb7f534cd9297dd22c322facbcf
 			if (data.success) {
 				validLoginId = data.data1;
 			} else {

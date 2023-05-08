@@ -42,7 +42,10 @@ public class UsrMemberController {
 	@RequestMapping("/usr/member/doJoin")
 	@ResponseBody
 	public String doJoin(String loginId, String loginPw, String name, String nickname, String cellphoneNo, String email, @RequestParam(defaultValue = "/") String afterLoginUri) {
+<<<<<<< HEAD
 		System.out.println("loginPw : " + loginPw);
+=======
+>>>>>>> 25732969e2907cb7f534cd9297dd22c322facbcf
 		if ( Ut.empty(loginId) ) {
 			return rq.jsHistoryBack("F-1", "loginId(을)를 입력해주세요.");
 		}
@@ -145,7 +148,10 @@ public class UsrMemberController {
 	@RequestMapping("/usr/member/doCheckPassword")
 	@ResponseBody
 	public String doCheckPassword(String loginPw, String replaceUri) {
+<<<<<<< HEAD
 		System.out.println("loginPw : " + loginPw);
+=======
+>>>>>>> 25732969e2907cb7f534cd9297dd22c322facbcf
 		if ( rq.getLoginedMember().getLoginPw().equals(loginPw) == false ) {
 			return rq.jsHistoryBack("비밀번호가 일치하지 않습니다.");
 		}
